@@ -39,12 +39,13 @@ pipeline {
           steps{
             echo 'Packaging vote app with docker'
             script{
+		echo "Testing"
               /*docker.withRegistry('https://index.docker.io/v1/', 'dockerlogin') {
                   def voteImage = docker.build("priyajv/vote:v${env.BUILD_ID}", "./vote")
                   voteImage.push()
                   voteImage.push("dev")
-	          voteImage.push("latest")*/
-              }
+	          voteImage.push("latest")
+              }*/
             }
           }
       }
